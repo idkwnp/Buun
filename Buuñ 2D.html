@@ -75,9 +75,9 @@
         </div>
 
         <div id="msg-console">
-            > MANTENER CLICK 1: DISPARAR | CLICK 2: ZOOM<br>
-            > SHIFT: DASH CORTO | Q: ESCUDO TEMP | E: CURAR<br>
-            > ESC: AJUSTES
+            > CLICK IZQUIERDO: DISPARAR | CLICK DERECHO: ZOOM<br>
+            > SHIFT: DASH | Q: ESCUDO | E: USAR BOTI<br>
+            > ESC: MENU DE PAUSA
         </div>
         <div id="crosshair"></div>
         <div id="bottom-bar">
@@ -571,7 +571,7 @@ argentinapapa: { enemy: 0x75aadb, stalker: 0xfcbf45, player: 0x843511, eye: 0xff
 
             if(isShooting && (Date.now() - player.lastShot > player.cooldown)) fireBullet(false);
 
-            let moveSpd = player.isAiming ? 2.5 : 5.0;
+            let moveSpd = player.isAiming ? 5.0 : 5.0;
             let px = player.x, py = player.y;
             if(keys['KeyW']) py -= moveSpd; if(keys['KeyS']) py += moveSpd;
             if(keys['KeyA']) px -= moveSpd; if(keys['KeyD']) px += moveSpd;

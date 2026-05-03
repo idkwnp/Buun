@@ -72,9 +72,9 @@
         </div>
 
         <div id="msg-console">
-            > MANTENER CLICK 1: DISPARAR | CLICK 2: ZOOM<br>
-            > SHIFT: DASH CORTO | Q: ESCUDO TEMP | E: CURAR<br>
-            > F3: 3RA PERSONA | ESC: AJUSTES
+            > CLICK IZQUIERDO: DISPARAR | CLICK DERECHO: APUNTAR<br>
+            > SHIFT: DASH | Q: ESCUDO | E: USAR BOTI<br>
+            > F3: TERCERA PERSONA | ESC: MENU DE PAUSA
         </div>
         <div id="crosshair"></div>
         <div id="bottom-bar">
@@ -621,7 +621,7 @@ argentinapapa: { enemy: 0x75aadb, stalker: 0xfcbf45, player: 0x843511, eye: 0xff
                 if (Date.now() - lastPassiveSpawn > spawnDelay && enemies.length < (isExtremeMode ? 25 : 12)) { spawnEnemy(player.kills > 0 && player.kills % 5 === 0); if (currentGameMode === 'double') spawnEnemy(); lastPassiveSpawn = Date.now(); }
             }
             if(isShooting && (Date.now() - player.lastShot > player.cooldown)) fireBullet(false);
-            const moveSpd = player.isAiming ? 0.2 : 0.45, oldX = playerController.position.x, oldZ = playerController.position.z;
+            const moveSpd = player.isAiming ? 0.45 : 0.45, oldX = playerController.position.x, oldZ = playerController.position.z;
             if(keys['KeyW']) playerController.translateZ(-moveSpd); if(keys['KeyS']) playerController.translateZ(moveSpd);
             if(keys['KeyA']) playerController.translateX(-moveSpd); if(keys['KeyD']) playerController.translateX(moveSpd);
             let nX = playerController.position.x, nZ = playerController.position.z; playerController.position.set(oldX, 3.5, oldZ);
