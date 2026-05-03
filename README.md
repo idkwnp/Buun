@@ -20,7 +20,7 @@ Controles
 
 -Click izquierdo para disparar
 
--click derecho para puntar (te hace mas lento)
+-click derecho para puntar
 
 -"E" para usar uno de tus botis (si tienes uno)
 
