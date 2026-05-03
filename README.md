@@ -1,5 +1,8 @@
 #githubdejameponerñ
 # Buuñ
+
+ADVERTENCIA: la musica/efectos de sonidos pueden ser un poco rompe timpanos, asi que es recomendable bajar el volumen antes de jugar 
+
 es un shooter y ahi me quede (Creditos de los creadores de Die of Death por la musica/efectos de sonido)
 por ahora no es compatible con telefono
 
